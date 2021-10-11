@@ -1052,7 +1052,6 @@ h5,
 h6 {
   color: #1f314f;
   font-family: "M PLUS 1p", sans-serif;
-  text-transform: capitalize;
   font-weight: 700;
   line-height: 1.3;
   margin-bottom: 20px;
@@ -1233,7 +1232,7 @@ h6 {
 
 .pagetitle__heading {
   color: #ffffff;
-  font-size: 75px;
+  font-size: 60px;
   line-height: 1.1;
   margin-bottom: 20px;
 }
@@ -3936,10 +3935,14 @@ input[type=radio] {
 
 .footer .footer-widget__title {
   color: #ffffff;
-  font-size: 15px;
+  font-size: 25px;
   font-weight: 700;
   text-transform: capitalize;
   margin-bottom: 35px;
+}
+
+.footer .footer-widget__title a {
+  color: #ffffff;
 }
 
 .footer .contact-list li {
@@ -4337,6 +4340,7 @@ input[type=radio] {
   line-height: 1.1;
   color: #ffffff;
   margin-bottom: 25px;
+  text-align: center;
 }
 
 .slider .slide__desc {
@@ -4346,6 +4350,9 @@ input[type=radio] {
   color: #ffffff;
   max-width: 550px;
   margin-bottom: 30px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
 
 .slider .slick-dots {
@@ -7740,12 +7747,12 @@ input[type=radio] {
 }
 
 .process-item.active .process-item__content:before {
-  border-color: #054c8b;
-  background-color: #054c8b;
+  border-color: #7DB548;
+  background-color: #7DB548;
 }
 
 .process-item.active .process-item__content:after {
-  background-color: #054c8b;
+  background-color: #7DB548;
 }
 
 .work-process .cta-banner {
