@@ -7241,6 +7241,9 @@ input[type=radio] {
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
+.service__tile-area{
+  height: 70px;
+}
 
 .service-item .service__desc {
   font-size: 14px;
@@ -7248,6 +7251,12 @@ input[type=radio] {
   margin-bottom: 32px;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
+}
+
+.service__desc-area{
+  height: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .service-item .service__content {
