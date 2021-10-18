@@ -23,7 +23,7 @@
      
  ----------------------------*/
 
-$(function () {
+ $(function () {
 
     "use strict";
 
@@ -199,27 +199,58 @@ $(function () {
     });
 
     /*==========   Slick Carousel ==========*/
-    $('.slick-carousel').slick();
-
-    $('.slider-with-navs').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
+    $('.slick-carousel').slick({
+        dots: true,
         arrows: false,
-        fade: false,
-        dots: false,
-        asNavFor: '.slider-nav'
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        responsive: [
+        {
+        breakpoint: 992,
+        settings: {
+        arrows: false,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+          }
+        },
+       {
+         breakpoint: 767,
+         settings: {
+           arrows: false,
+           slidesToShow: 2,
+           slidesToScroll: 2,
+         }
+       },
+       {
+         breakpoint: 480,
+         settings: {
+           arrows: false,
+           slidesToShow: 1,
+           slidesToScroll: 1,
+         }
+       }
+     ]
     });
 
-    $('.slider-nav').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        asNavFor: '.slider-with-navs',
-        dots: false,
-        arrows: true,
-        centerMode: true,
-        focusOnSelect: true,
-        centerPadding: '10px'
-    });
+    // $('.slider-with-navs').slick({
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
+    //     arrows: false,
+    //     fade: false,
+    //     dots: false,
+    //     asNavFor: '.slider-nav'
+    // });
+
+    // $('.slider-nav').slick({
+    //     slidesToShow: 3,
+    //     slidesToScroll: 1,
+    //     asNavFor: '.slider-with-navs',
+    //     dots: false,
+    //     arrows: true,
+    //     centerMode: true,
+    //     focusOnSelect: true,
+    //     centerPadding: '10px'
+    // });
 
     /*==========  Popup Video  ==========*/
     $('.popup-video').magnificPopup({
