@@ -4355,6 +4355,12 @@ input[type=radio] {
   justify-content: center;
 }
 
+.slider .slide_description--box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .slider .slick-dots {
   position: absolute;
   bottom: 30px;
@@ -7958,7 +7964,11 @@ input[type=radio] {
   display: flex;
   justify-content: space-between;
 }
-
+.slide__content{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
 
 
 /*# sourceMappingURL=style.css.map */
